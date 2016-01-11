@@ -59,7 +59,7 @@
         ballX3 = ballX3 + dx3;
         ballY3 = ballY3 + dy3;
         // If we've hit the left or right, turn around
-        if (ballX > CANVAS_WIDTH || ballX < 0) {
+        if (ballX > CANVAS_WIDTH || ballX < 0 || ballX == ballX1 || ballX == ballX2 || ballX == ballX3) {
           dx = -dx;
         }
         if (ballX1 > CANVAS_WIDTH || ballX1 < 0) {
